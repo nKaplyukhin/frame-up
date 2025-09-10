@@ -1,0 +1,9 @@
+$black-color: #222;
+$white-color: #fff;
+
+$desktop-width: 768px;
+@mixin desktop() {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}

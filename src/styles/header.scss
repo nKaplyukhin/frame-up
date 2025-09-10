@@ -1,0 +1,27 @@
+$dot-size: 3px;
+$columns: 11;
+$rows: 4;
+$block-height: 120px;
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 80%;
+    height: $block-height;
+    --step-x: calc(100% / #{$columns});
+    --step-y: calc(#{$block-height} / #{$rows});
+
+    background-image: radial-gradient(
+      circle at center,
+      $white-color $dot-size,
+      transparent $dot-size
+    );
+    background-size: var(--step-x) var(--step-y);
+  }
+  &__burger {
+    margin-top: 12px;
+  }
+}
