@@ -1,3 +1,5 @@
+$line-height: 0.15rem;
+
 .burger {
   display: block;
   width: 1.8rem;
@@ -14,7 +16,7 @@
     left: 0rem;
     right: 0;
     background-color: $white-color;
-    height: 0.2rem;
+    height: $line-height;
     transition: all 0.3s ease-out;
   }
 
@@ -26,35 +28,6 @@
     top: 0rem;
   }
 
-  &_active {
-    z-index: 100;
-    height: 2rem;
-    background-color: transparent;
-
-    & .burger__button-item {
-      opacity: 0;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 50%;
-      bottom: 0;
-      left: 0;
-      background-color: black;
-    }
-
-    &::after {
-      transform: rotate(40deg);
-    }
-
-    &::before {
-      transform: rotate(-40deg);
-    }
-  }
-
   &__button-item {
     position: absolute;
     left: 0;
@@ -62,7 +35,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: $white-color;
-    height: 0.2rem;
+    height: $line-height;
     transition: all 0.3s ease-out;
   }
 }

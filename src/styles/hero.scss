@@ -1,16 +1,23 @@
 .hero {
   position: relative;
   height: 600px;
-  padding: 2rem 0;
+  padding-top: 0.4rem;
   &__container {
     height: 100%;
     position: relative;
+  }
+  &__points {
+    @include points(40px, 2px, 11, 2);
+    width: 80%;
+    margin-bottom: 2rem;
   }
   &__title {
     position: absolute;
     text-transform: uppercase;
     z-index: 10;
     font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
     bottom: 2rem;
     left: -4rem;
     text-align: center;
@@ -24,17 +31,19 @@
   &__content {
     position: relative;
     background-color: #484444;
-    width: 70%;
+    width: 90%;
     height: 450px;
     margin-left: auto;
     &::after {
       position: absolute;
       content: "Elizaveta Andreeva";
+      font-weight: bold;
+      letter-spacing: 0.3rem;
       text-transform: uppercase;
-      font-size: 1.5rem;
+      font-size: 1rem;
       transform: rotate(-90deg);
-      top: 7.5rem;
-      left: -9.5rem;
+      top: 7.45rem;
+      left: -9rem;
     }
   }
   & video {
@@ -44,10 +53,10 @@
   }
   &__image {
     position: absolute;
-    bottom: 0;
     margin-top: auto;
     width: 3rem;
     height: 4rem;
-    left: 20%;
+    right: calc(100% - 16px);
+    top: 100%;
   }
 }

@@ -1,5 +1,6 @@
 @import "./normalize";
 @import "./variables";
+@import "./fonts";
 
 * {
   box-sizing: border-box;
@@ -50,11 +51,20 @@ ul {
 
 .container {
   max-width: 500px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: auto;
 }
 
+.title {
+  margin-top: -3rem;
+  font-family: Caravan;
+  font-size: 7rem;
+  font-weight: normal;
+}
 
-@import "./header.scss";
-@import "./burger.scss";
-@import "./hero.scss";
+@import "./header";
+@import "./burger";
+@import "./hero";
+@import "./info";
+@import "./time";
+@import "./price";

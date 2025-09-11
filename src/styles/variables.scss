@@ -7,3 +7,17 @@ $desktop-width: 768px;
     @content;
   }
 }
+
+@mixin points($block-height, $dot-size, $columns, $rows) {
+  width: 100%;
+  height: $block-height;
+  --step-x: calc(100% / #{$columns});
+  --step-y: calc(#{$block-height} / #{$rows});
+
+  background-image: radial-gradient(
+    circle at center,
+    $white-color $dot-size,
+    transparent $dot-size
+  );
+  background-size: var(--step-x) var(--step-y);
+}

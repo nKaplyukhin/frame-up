@@ -1,0 +1,21 @@
+.time {
+  padding: 1rem 1.4rem;
+  padding-top: 2rem;
+  &__container {
+    height: 38rem;
+    background-image: url(../assets/time-image.webp);
+    background-position: bottom right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+  &__list {
+    text-transform: uppercase;
+    font-family: Manrope;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
