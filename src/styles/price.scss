@@ -1,3 +1,51 @@
 .price {
-    padding: 1rem 0;
+  padding: 1rem 0;
+  font-family: Manrope;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    position: relative;
+  }
+  &__text-block {
+    padding-left: 3rem;
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__image-block {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      left: -0.3rem;
+      top: -0.3em;
+      width: 50%;
+      height: 50%;
+      background-color: $white-color;
+    }
+  }
+  &__mini-title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  &__content {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    bottom: 0;
+  }
 }
