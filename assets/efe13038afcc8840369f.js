@@ -1,7 +1,4 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-var __webpack_exports__ = {};
-
+import "./styles/styles.scss";
 
 const options = {
     root: document,
@@ -24,7 +21,3 @@ const animationsBlock = document.querySelectorAll(".animation-block")
 animationsBlock.forEach(i => {
     observer.observe(i)
 })
-
-/******/ })()
-;
-//# sourceMappingURL=main.js.map
