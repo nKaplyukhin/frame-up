@@ -1,0 +1,33 @@
+.animation {
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+  &_delay1 {
+    transition-delay: 0.5s;
+  }
+  &_delay2 {
+    transition-delay: 0.8s;
+  }
+  &_left {
+    transform: translateX(-70%);
+  }
+  &_right {
+    transform: translateX(70%);
+  }
+  &_bottom {
+    transform: translateY(70%);
+  }
+  &_active {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animation-block {
+  &_active {
+    & .animation {
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+}

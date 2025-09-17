@@ -1,12 +1,16 @@
 .info {
   font-family: Manrope;
   padding: 1rem 0;
+  &.animation-block_active .animation {
+    opacity: 1;
+    background-position: center;
+  }
   &__content {
     position: relative;
     height: 40rem;
     background-image: url(../assets/info-image.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 500px;
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 8rem;

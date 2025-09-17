@@ -2,6 +2,10 @@
   position: relative;
   height: 600px;
   padding-top: 0.4rem;
+  &.animation-block_active .hero__text {
+    opacity: 1;
+    transform: rotate(-90deg) !important;
+  }
   &__container {
     height: 100%;
     position: relative;
@@ -30,21 +34,20 @@
   }
   &__content {
     position: relative;
-    background-color: #484444;
     width: 90%;
     height: 450px;
     margin-left: auto;
-    &::after {
-      position: absolute;
-      content: "Elizaveta Andreeva";
-      font-weight: bold;
-      letter-spacing: 0.3rem;
-      text-transform: uppercase;
-      font-size: 1rem;
-      transform: rotate(-90deg);
-      top: 7.45rem;
-      left: -9rem;
-    }
+  }
+  &__text {
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    opacity: 0;
+    font-size: 1rem;
+    transform: rotate(-90deg) translateY(-300%) !important;
+    top: 7.45rem;
+    left: -9rem;
   }
   & video {
     width: 100%;

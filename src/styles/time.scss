@@ -1,11 +1,16 @@
 .time {
   padding: 1rem 1.4rem;
   padding-top: 2rem;
+  &.animation-block_active .animation {
+    opacity: 1;
+    background-position: center;
+    background-position: bottom right;
+  }
   &__container {
     height: 38rem;
     background-image: url(../assets/time-image.webp);
-    background-position: bottom right;
     background-size: 100%;
+    background-position: 500px bottom;
     background-repeat: no-repeat;
   }
   &__title {

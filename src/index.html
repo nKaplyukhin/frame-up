@@ -27,16 +27,17 @@
       </div>
     </header>
     <main>
-      <section class="secton hero">
+      <section class="secton hero animation-block">
         <div class="container hero__container">
           <div class="hero__points"></div>
           <div class="hero__content">
-            <h1 class="hero__title">
+            <h1 class="hero__title animation animation_left">
               <span>FRAME</span>
               <br>
               <span> UP</span>
             </h1>
             <video
+              class="hero__video animation animation_right animation_delay1"
               autoplay
               muted
               loop
@@ -50,24 +51,27 @@
               Ваш браузер не поддерживает видео.
             </video>
             <img
-              class="hero__image"
+              class="hero__image animation animation_bottom animation_delay2"
               src="./assets/symbol.svg"
               alt="Символ"
             >
+            <p class="hero__text animation">
+              Elizaveta Andreeva
+            </p>
           </div>
         </div>
       </section>
-      <section class="section info">
+      <section class="section info animation-block">
         <div class="container info__container">
-          <div class="info__content">
+          <div class="info__content animation">
             <div class="info__line info__line_first"></div>
-            <h2 class="info__title">
+            <h2 class="info__title animation animation_left animation_delay1">
               <span>
                 STRIP
               </span>
               с 0
             </h2>
-            <ul class="info__list">
+            <ul class="info__list animation animation_bottom animation_delay2">
               <li class="info__item">База стиля</li>
               <li class="info__item">Работа с музыкальностью</li>
               <li class="info__item">работа с телом и пластикой</li>
@@ -78,10 +82,10 @@
           <div class="info__points"></div>
         </div>
       </section>
-      <section class="section time">
-        <div class="container time__container">
-          <h2 class="time__title title">Время</h2>
-          <ul class="time__list">
+      <section class="section time animation-block">
+        <div class="container time__container animation">
+          <h2 class="time__title title animation animation_left animation_delay1">Время</h2>
+          <ul class="time__list animation animation_bottom animation_delay2">
             <li class="time__item">
               <p class="time__text">Strip pro</p>
               <p class="time__text">вт/чт 20:00-21:00</p>
@@ -97,21 +101,21 @@
           </ul>
         </div>
       </section>
-      <section class="section price">
+      <section class="section price animation-block">
         <div class="container price__container">
-          <h2 class="title price__title">Прайс</h2>
-          <div class="price__text-block">
+          <h2 class="title price__title animation animation_left">Прайс</h2>
+          <div class="price__text-block animation animation_right animation_delay1">
             <p class="price__text">400 р. - первое пробное занятие</p>
             <p class="price__text">750 р. - разовое занятие</p>
           </div>
-          <div class="price__image-block">
+          <div class="price__image-block animation animation_right animation_delay1">
             <img
               src="./assets/price.jpg"
               alt="Прайс"
               class="price__image"
             >
           </div>
-          <div class="price__content">
+          <div class="price__content animation animation_bottom animation_delay2">
             <div class="price__block">
               <h3 class="price__mini-title">Абонемент</h3>
               <p class="price__text">2600 р. - 4 занятия</p>
@@ -125,18 +129,18 @@
           </div>
         </div>
       </section>
-      <section class="contacts section">
+      <section class="contacts section animation-block">
         <div class="contacts__container container">
           <div class="contacts__black"></div>
-          <h2 class="title contacts__title">
+          <h2 class="title contacts__title animation animation_left">
             Контакты
           </h2>
           <img
             src="./assets/contacts.jpg"
             alt="Контакты"
-            class="contacts__image"
+            class="contacts__image animation animation_right animation_delay1"
           >
-          <div class="contacts__content">
+          <div class="contacts__content animation animation_bottom animation_delay2">
             <img
               src="./assets/location.svg"
               alt="Местоположение"
@@ -160,5 +164,6 @@
         *instagram (запрещен в России, принадлежит Meta)
       </p>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
